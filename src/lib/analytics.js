@@ -21,3 +21,4 @@ if (GA_ID) {
 }
 
 export default GoogleAnalytics;
+
