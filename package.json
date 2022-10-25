@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-   "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build",
+   "build": "export NODE_OPTIONS=--openssl-legacy-provider",
     "clean": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist",
     "deploy": "touch build/.nojekyll && gh-pages -t -d build -m \"[skip ci] Build for $(git log --pretty=format:%H -n1)\"",
     "prepare": "husky install",
